@@ -25,6 +25,7 @@ body {
     font-family: var(--main-font);
     font-size: var(--small-font-size);
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 body p, body h1, body h2 {
