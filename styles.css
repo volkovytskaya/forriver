@@ -34,7 +34,6 @@ body p, body h1, body h2 {
 
 canvas {
     height: 100vh !important;
-    width: 100vw !important;
     min-height: 761px;
 }
 
