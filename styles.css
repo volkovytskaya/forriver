@@ -9,7 +9,7 @@
     --main-font: "Open Sans", "Helvetica", sans-serif;
     --titles-font: "Playfair Display", serif;
     --motto-font: "Oswald", sans-serif;
-    --small-font-size: calc(0.4rem + 1vw);
+    --small-font-size: calc(1rem + 0.28vw);
     --medium-font-size: calc(1.2rem + 2vw);
     --big-font-size: calc(3.5rem + 1vw);
     --large-font-size: calc(6.5rem + 1vw);
@@ -73,9 +73,10 @@ section {
 
 .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.875rem;
+    padding-top: 1.8rem;
 }
 
 .nav ul {
@@ -477,14 +478,21 @@ footer p {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     :root {
         --large-font-size: calc(3.5rem + 1vw);
-        --small-font-size: calc(0.7rem + 1vw);
+    }
+
+    header {
+        padding: 0 1.5rem;
     }
 
     nav {
-        display: none;
+        padding: 1rem 0;
+    }
+
+    .nav ul li {
+        padding-left: 1.5rem;
     }
 
     .about-us-title h2 {
@@ -556,5 +564,18 @@ footer p {
 
     .social {
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
