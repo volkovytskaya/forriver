@@ -98,6 +98,10 @@ section {
     color: var(--accent)
 }
 
+.nav .main-link {
+    color: var(--accent);
+}
+
 /* Header */
 
 header {
