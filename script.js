@@ -1,28 +1,28 @@
 // animation for header arrows
-const arrows = document.querySelectorAll('.arrow');
+const arrowsInHeader = document.querySelectorAll('.arrow');
 
-function animateArrows() {
-    arrows.forEach((arrow) => {
+function animateArrowsInHeader() {
+    arrowsInHeader.forEach((arrow) => {
         arrow.classList.remove("bounce");
     });
-    arrows.forEach((arrow, i) => {
+    arrowsInHeader.forEach((arrow, i) => {
         setTimeout(() => {
             if (arrow.className) {
                 arrow.classList.add("bounce");
+            }
+        }, i * 100 + 100)
+        setTimeout(() => {
+            if (arrow.className) {
                 arrow.classList.add("color-highlight");
                 setTimeout(() => {
                     arrow.classList.remove("color-highlight");
-                }, i * 100 + 100);
+                }, 200);
             }
-        }, i * 100 + 100)
+        }, i * 100 + 500)
     });
 }
 
-arrows.forEach((arrow) => {
-    arrow.classList.remove("bounce");
-});
-
-setInterval(animateArrows, 2000);
+setInterval(animateArrowsInHeader, 2000);
 
 // animation for reviews
 let leftArrow = document.querySelector('.left-arrow');
