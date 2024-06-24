@@ -51,10 +51,10 @@ leftArrow.addEventListener('click', () => {
 });
 
 // animation for principles
-function callback (observations, observer) {
+function callback(observations) {
     observations.forEach(observation => {
       if (observation.isIntersecting) { 
-        observation.target.classList.add('appear');
+        observation.target.classList.add('slide');
       }   
    });
 }

@@ -241,7 +241,7 @@ header {
 
 .principles-title img {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -435,13 +435,13 @@ footer p {
     fill: var(--accent);
 }
 
-.appear {
-    animation: fadeInRight 1s;
-    opacity: 1;
-}
-
 .pulse {
     animation: pulse 1s;
+}
+
+.slide {
+    animation: 1s ease-out 0s 1 slide-from-right forwards;
+    opacity: 1;
 }
 
 @keyframes arrows-bounce {
@@ -455,6 +455,15 @@ footer p {
         transform: translateY(-2px);
     }
 }
+
+@keyframes slide-from-right {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 /* Parallax */
 
@@ -506,7 +515,7 @@ footer p {
     }
 
     .principles-title img {
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     .about-us :first-child p {
@@ -583,5 +592,9 @@ footer p {
     .waves {
         left: -80px;
         width: 800px;
+    }
+
+    .principles-title img {
+        max-width: 20rem;
     }
 }
