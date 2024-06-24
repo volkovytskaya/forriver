@@ -502,6 +502,7 @@ footer p {
     .about-us {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
 
     .principles-title img {
@@ -577,5 +578,10 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .waves {
+        left: -80px;
+        width: 800px;
     }
 }
