@@ -589,9 +589,10 @@ footer p {
         justify-content: center;
     }
 
-    .waves {
-        left: -80px;
-        width: 800px;
+    .waves img {
+        position: absolute;
+        left: -90px;
+        width: 210px;
     }
 
     .principles-title img {
