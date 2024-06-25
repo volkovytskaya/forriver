@@ -25,8 +25,8 @@ function animateArrowsInHeader() {
 setInterval(animateArrowsInHeader, 2000);
 
 // animation for reviews
-let leftArrow = document.querySelector('.left-arrow');
-let rightArrow = document.querySelector('.right-arrow');
+let leftArrows = document.querySelectorAll('.left-arrow');
+let rightArrows = document.querySelectorAll('.right-arrow');
 
 const reviews = document.getElementsByClassName('review');
 
@@ -42,12 +42,16 @@ function updateSelectedReview(direction) {
     reviews[selectedReview].classList.add('pulse');
 }
 
-rightArrow.addEventListener('click', () => {
-    updateSelectedReview('right');
+rightArrows.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+        updateSelectedReview('right');
+    });
 });
 
-leftArrow.addEventListener('click', () => {
-    updateSelectedReview('left');
+leftArrows.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+        updateSelectedReview('left');
+    });
 });
 
 // animation for principles

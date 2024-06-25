@@ -352,6 +352,10 @@ header {
     cursor: pointer;
 }
 
+.mobile-arrow {
+    display: none;
+}
+
 .left-arrow {
     padding-right: 2rem;
 }
@@ -597,5 +601,22 @@ footer p {
 
     .principles-title img {
         max-width: 20rem;
+    }
+
+    .carousel-arrow {
+        display: none;
+    }
+
+    .mobile-arrow {
+        display: block;
+        width: 30px;
+    }
+
+    .left-arrow {
+        padding-right: 1rem;
+    }
+
+    .right-arrow {
+        padding-left: 1rem;
     }
 }
