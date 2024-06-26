@@ -223,6 +223,7 @@ header {
     color: var(--dark);
     margin-bottom: 1rem;
     padding-top: 2rem;
+    overflow-x: hidden;
 }
 
 .principles .principles-image {
